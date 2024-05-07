@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang=”en”>
+    <head>
+        <meta charset=”UTF-8″>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Creative CSS</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main id="main-doc">
+
+            <nav id="navbar">
+
+                <div id="div-header">
+                    <header id="header-nav"><h2>5 Creative CSS Ideas</h2></header>
+                </div>
+
+                <div id="links">
+                    <a class="nav-link" href="#Typewriter_Text_Animation">Typewriter Text Animation</a>
+                    <a class="nav-link" href="#Animated_Navigation_Menu">Animated Navigation Menu</a>
+                    <a class="nav-link" href="#Pulsating_Loading_Button">Pulsating Loading Button</a>
+                    <a class="nav-link" href="#3D_Shadow_Effect_on_Text">3D Shadow Effect on Text</a>
+                    <a class="nav-link" href="#Animated_Profile_Cards">Animated Profile Cards</a>
+                </div>
+
+            </nav>
+
+            <div id="empty"></div>
+
+            <div id="sections">
+
+                <h1 id="main-header">5 Creative CSS Ideas</h1>
+
+                <section id="Typewriter_Text_Animation" class="main-section">
+                    <header>
+                        <h2 class="header-section">Typewriter Text Animation</h2>
+                    </header>
+
+                    <p class="first-text">Create a text effect that simulates typing on a typewriter, animated.</p>
+                    <p class="second-text">Try it in your code editor</p>
+
+                    <div class="div-code">
+                        <code>
+                            <!DOCTYPE html>
+                                <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Typewriter Effect</title>
+                                        <style>
+                                            @keyframes typing {
+                                                from { width: 0 }
+                                                to { width: 100% }
+                                            }
+                                            .typewriter {
+                                                overflow: hidden;
+                                                border-right: .15em solid orange;
+                                                white-space: nowrap;
+                                                margin: 0 auto;
+                                                letter-spacing: .15em;
+                                                animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+                                            }
+                                            @keyframes blink-caret {
+                                                from, to { border-color: transparent }
+                                                50% { border-color: orange }
+                                            }
+                                        </style>
+                                    </head>
+                                    <body>
+                                        <h1 class="typewriter">Text Animation By Ronald</h1>
+                                    </body>
+                                </html>
+                        </code>
+                    </div>
+                </section>
+
+                <section id="Animated_Navigation_Menu" class="main-section">
+                    <header>
+                        <h2 class="header-section">Animated Navigation Menu</h2>
+                    </header>
+
+                    <p class="first-text">Create a navigation menu that changes color or size when hovered over.</p>
+                    <p class="second-text">Try it in your code editor</p>
+
+                    <div class="div-code">
+                        <code>
+                            <!DOCTYPE html>
+                                <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Animated Navigation Menu</title>
+                                        <style>
+                                            ul {
+                                                list-style-type: none;
+                                                margin: 0;
+                                                padding: 0;
+                                                overflow: hidden;
+                                                background-color: #333;
+                                            }
+                                            li {
+                                                float: left;
+                                            }
+                                            li a {
+                                                display: block;
+                                                color: white;
+                                                text-align: center;
+                                                padding: 14px 16px;
+                                                text-decoration: none;
+                                            }
+                                            li a:hover {
+                                                background-color: #111;
+                                            }
+                                        </style>
+                                    </head>
+                                    <body>
+                                        <ul>
+                                            <li><a href="#home">Home</a></li>
+                                            <li><a href="#news">News</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                            <li><a href="#about">About</a></li>
+                                        </ul>
+                                    </body>
+                                </html>
+                        </code>
+                    </div>
+
+                </section>
+
+                <section id="Pulsating_Loading_Button" class="main-section">
+                    <header>
+                        <h2 class="header-section">Pulsating Loading Button</h2>
+                    </header>
+
+                    <p class="first-text">Create a loading button that pulsates while waiting for user action.</p>
+                    <p class="second-text">Try it in your code editor</p>
+
+                    <div class="div-code">
+                        <code>
+                            <!DOCTYPE html>
+                                <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Pulsating Loading Button</title>
+                                        <style>
+                                            .loader {
+                                                border: 6px solid #f3f3f3; /* Light grey */
+                                                border-top: 6px solid #3498db; /* Blue */
+                                                border-radius: 50%;
+                                                width: 50px;
+                                                height: 50px;
+                                                animation: spin 2s linear infinite;
+                                            }
+                                            @keyframes spin {
+                                                0% { transform: rotate(0deg); }
+                                                100% { transform: rotate(360deg); }
+                                            }
+                                        </style>
+                                    </head>
+                                    <body>
+                                        <div class="loader"></div>
+                                    </body>
+                                </html>
+                        </code>
+                    </div>
+                </section>
+
+                <section id="3D_Shadow_Effect_on_Text" class="main-section">
+                    <header>
+                        <h2 class="header-section">3D Shadow Effect on Text</h2>
+                    </header>
+
+                    <p class="first-text">Add a 3D shadow effect to text to give it a deeper appearance.</p>
+                    <p class="second-text">Try it in your code editor</p>
+
+                    <div class="div-code">
+                        <code>
+                            <!DOCTYPE html>
+                                <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>3D Text Shadow</title>
+                                        <style>
+                                            h3 {
+                                                font-size: 40px;
+                                                text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+                                                margin-top: 10px;
+                                                margin-bottom: 10px;
+                                            }
+                                        </style>
+                                    </head>
+                                    <body>
+                                        <h3>3D Shadow</h1>
+                                    </body>
+                                </html>
+                        </code>
+                    </div>
+                </section>
+                
+                <section id="Animated_Profile_Cards" class="main-section">
+                    <header>
+                        <h2 class="header-section">Animated Profile Cards</h2>
+                    </header>
+
+                    <p class="first-text">Create animated profile cards using CSS, featuring hover effects for a modern and dynamic user interface.</p>
+                    <p class="second-text">Try it in your code editor</p>
+
+                    <div class="div-code" id="5-code">
+                        <code>
+                            <!DOCTYPE html>
+                                <html lang="en">
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Animated Profile Card</title>
+                                        <style>
+                                            .profile-card {
+                                                width: 200px;
+                                                height: 300px;
+                                                background-color: #fff;
+                                                border-radius: 15px;
+                                                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                                                overflow: hidden;
+                                                position: relative;
+                                                transition: transform 0.3s ease;
+                                                margin:20px;
+                                            }
+                                            .profile-card:hover {
+                                                transform: translateY(-10px);
+                                            }
+                                            .profile-picture {
+                                                width: 100%;
+                                                height: 200px;
+                                                background-image: url('profile-pic.png');
+                                                background-size: cover;
+                                                background-position: center;
+                                            }
+                                            .profile-info {
+                                                padding: 20px;
+                                            }
+                                            .profile-name {
+                                                font-size: 20px;
+                                                font-weight: bold;
+                                                margin-bottom: 2px;
+                                            }
+                                            .profile-description {
+                                                font-size: 14px;
+                                                color: #666;
+                                                font-weight: 600;
+                                            }
+
+                                        </style>
+                                    </head>
+                                    <body>
+                                        <div class="profile-card">
+                                            <div class="profile-picture"></div>
+                                            <div class="profile-info">
+                                                <div class="profile-name">Ronald Gutierrez</div>
+                                                <div class="profile-description">Web Developer</div>
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </body>
+                                </html>
+                            
+                        </code>
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+    </body>
+</html>
